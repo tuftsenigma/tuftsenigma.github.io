@@ -1,0 +1,48 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 18px;
+    padding-bottom: 60px;
+    height: 100%;
+}
+
+footer {
+    /*padding-bottom: 60px;*/
+    /*height: 20px;*/
+    font-size: 12px;
+    text-align: right;
+    padding: 10px;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+}
+
+/* bootstrap page-header additions */
+.page-header {
+    text-align: center;
+}
+
+/* navbar */
+.navbar-brand {
+    height: 50px;
+    padding: 0px;
+}
+
+.nav>li>a {
+    display: inline-block;
+}
+
+/* page w/ title and subtitle */
+.page-title {
+    background-color: #8ABDDF;
+    color: #FFFFFF;
+}
+
+.page-title h1 {
+    margin-bottom: 21px;
+}
+
+.page-title h1, .page-title h3 {
+    display: inline-block;
+}

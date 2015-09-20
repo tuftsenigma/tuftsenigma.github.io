@@ -1,0 +1,11 @@
+{% if page.title %}
+  <header class="page-title">
+    <div class="container">
+      <h1>{{ page.title }}
+      {% if page.subtitle %}
+        :&nbsp;&nbsp;<h3>{{ page.subtitle }}</h3>
+      {% endif %}
+      </h1>
+    </div>
+  </header>
+{% endif %}
