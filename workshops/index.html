@@ -39,9 +39,11 @@ subtitle: Fall 2015 Lecture Series
         <div id="collapse{{ forloop.index }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{ forloop.index }}">
           <div class="panel-body">
             <p><b>Speaker: {{ workshop.speaker }}</b>
-            {{ if workshop.fbevent }}
-              &nbsp;|&nbsp;<a href="{{ workshop.fbevent }}" target="_blank"><i class="fa fa-facebook-official fa-lg"></i></a>
-            {{ endif }}
+            <script>
+              if ('{{ workshop.fbevent }}' != '') {
+                document.write('&nbsp;|&nbsp;<a href="{{ workshop.fbevent }}" target="_blank"><i class="fa fa-facebook-official fa-lg"></i></a>');
+              }
+            </script>
             </p>
             {{ workshop.content }}
           </div>
