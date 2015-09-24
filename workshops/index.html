@@ -27,7 +27,7 @@ subtitle: Fall 2015 Lecture Series
         <div class="panel-heading" role="tab" id="heading{{ forloop.index }}">
           <h4 class="panel-title">
             <a role="button" data-toggle="collapse" data-parent="#workshops" href="#collapse{{ forloop.index }}" aria-expanded="false" aria-controls="collapse{{ forloop.index }}">
-              <h4>{{ workshop.title }} -
+              <h4><i class="fa fa-chevron-down workshop-chevron"></i>{{ workshop.title }} -
                 <script>
                   var date = new Date('{{ workshop.date }}');
                   document.write(' '+date.toLocaleDateString()+' &#64; '+date.toLocaleTimeString());
