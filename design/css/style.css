@@ -42,3 +42,8 @@ footer {
 .page-title h1, .page-title h3 {
     display: inline-block;
 }
+
+/* workshop page schedule */
+.workshop-wrapper {
+    padding-top: 20px;
+}

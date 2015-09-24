@@ -1,6 +1,52 @@
 ---
 layout: page
 title: Workshops
+subtitle: Fall 2015 Lecture Series
 ---
 
-<h1>More to come soon!</h1>
+<!-- display events in chronological order, soonest to latest -->
+<div class="workshop-wrapper">
+  <div class="panel-group" id="workshops" role="tablist" aria-multiselectable="true">
+    {% for workshop in site.categories.workshops reversed %}
+      <script>
+        var now = new Date();
+        var workshop_date = new Date('{{ workshop.date }}')
+        var panel_type = 'default';
+        if (now < workshop_date) {
+          if (now.getMonth() == workshop_date.getMonth()
+              && now.getYear() == workshop_date.getYear()) {
+            if (now.getDate() == workshop_date.getDate()) {
+              panel_type = 'success';
+            } else if (workshop_date.getDate() - now.getDate() < 7) {
+              panel_type = 'warning';
+            }
+          }
+        }
+        document.write('<div class="panel panel-'+panel_type+'">')
+      </script>
+        <div class="panel-heading" role="tab" id="heading{{ forloop.index }}">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#workshops" href="#collapse{{ forloop.index }}" aria-expanded="false" aria-controls="collapse{{ forloop.index }}">
+              <h4>{{ workshop.title }} -
+                <script>
+                  var date = new Date('{{ workshop.date }}');
+                  document.write(' '+date.toLocaleDateString()+' &#64; '+date.toLocaleTimeString());
+                </script>
+              </h4>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse{{ forloop.index }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{ forloop.index }}">
+          <div class="panel-body">
+            <p><b>Speaker: {{ workshop.speaker }}</b>
+            {{ if workshop.fbevent }}
+              &nbsp;|&nbsp;<a href="{{ workshop.fbevent }}" target="_blank"><i class="fa fa-facebook-official fa-lg"></i></a>
+            {{ endif }}
+            </p>
+            {{ workshop.content }}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
