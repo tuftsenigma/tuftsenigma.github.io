@@ -2,6 +2,7 @@
 title: Public Data Scraping with Python
 date: 2015-09-30 20:00:00 -0400
 speaker: Yotam Bentov & Enigma Staff
+fbevent: https://www.facebook.com/events/1483221922006727/
 ---
 
 Ever wanted to collect statistics or answer some big questions about a large amount of data? Interested in running statistical analyses on data related to an issue you're passionate about?
