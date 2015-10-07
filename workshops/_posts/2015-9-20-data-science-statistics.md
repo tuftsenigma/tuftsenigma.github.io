@@ -1,7 +1,7 @@
 ---
 title: Answering Questions in Journalism with Statistics
 date: 2015-10-07 20:00:00 -0400
-speaker: TBD
+speaker: Enigma Staff
 fbevent: https://www.facebook.com/events/417132551813982/417641848429719/
 ---
 
