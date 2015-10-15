@@ -13,4 +13,4 @@ This year, we are doing something special by putting together a workshop series 
 
 If you are interested in working on a piece for the Tufts Independent Data Journal and you'd like to learn some awesome (not to mention employable) data-centric + machine learning skills along the way, come join us Tuesday night at Eaton 202!
 
-**You can find the slides from the GIM <a href="{{ site.url }}/assets/GIM_2015-16-Intro_workshop.pdf" target="_blank">here</a>**
+**You can find the slides from the GIM [here]({{ site.url }}/assets/GIM_2015-16-Intro_workshop.pdf)**
