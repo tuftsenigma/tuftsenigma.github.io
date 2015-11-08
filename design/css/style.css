@@ -56,3 +56,14 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .tooltip, .popover {
 .workshop-chevron {
     padding-right: 15px;
 }
+
+/* posts styling */
+.center-image {
+    margin: 0 auto;
+    display: block;
+}
+
+.post-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
