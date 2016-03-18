@@ -4,7 +4,7 @@ title: Archive
 ---
 
 {% for post in site.posts %}
-    {% if post.categories contains 'article-archive' %}
+    {% if post.categories contains 'archive' %}
         <p><a href="{{ post.url }}">{{ post.title }}, {{ post.date }}</a></p>
     {% endif %}
 {% endfor %}
