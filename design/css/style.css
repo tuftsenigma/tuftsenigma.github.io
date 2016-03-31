@@ -15,8 +15,21 @@ footer {
 }
 
 /* change font to Ubuntu Condensed */
-body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .tooltip, .popover {
-    font-family: 'Ubuntu Condensed', sans-serif;
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .tooltip, .popover {
+}
+
+h3 {
+    text-align: justify;
+    margin: 0 auto;
+    width: 30em;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    font-family: 'Adobe Caslon Pro';
 }
 
 /* bootstrap page-header additions */
@@ -32,6 +45,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .tooltip, .popover {
 
 .nav>li>a {
     display: inline-block;
+    font-family: 'Helvetica';
 }
 
 /* page w/ title and subtitle */
@@ -65,10 +79,41 @@ img + em {
 .center-image {
     margin: 0 auto;
     display: block;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .post-container {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.container {
+    max-width: 55%;
+}
+
+.dropdown-toggle {
+    font-family: 'Helvetica';
+}
+
+.dropdown-menu {
+    font-family: 'Helvetica';
+}
+
+blockquote {
+    font-family: 'Adobe Caslon Pro';
+}
+
+.post-section-p1:first-letter {
+    float: left;
+    font-size: 65px;
+    line-height: 35px;
+    padding-top: 20px;
+    padding-left: 3px;
+    padding-right: 8px;
+}
+
+.post-section-p1 {
+    padding-top: 15px;
+    margin-bottom: 10.5px;
 }
